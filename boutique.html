@@ -1,78 +1,428 @@
+
 <!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Serveur Minecraft - BoxedBlock - 1.13.X / 1.17.x">
+    <meta name="theme-color" content="#3490DC">
+    <meta name="author" content="Azuriom">
+
+    <meta property="og:title" content="Grades">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://boxedblock.fr/shop/categories/2">
+    <meta property="og:image" content="https://boxedblock.fr/storage/img/000.png">
+    <meta property="og:description" content="Serveur Minecraft - BoxedBlock - 1.13.X / 1.17.x">
+    <meta property="og:site_name" content="BoxedBlock">
+    <meta name="keywords" content="Minecraft,BoxeBlock,SkyBlock,1.13-1.17">
+
+<!-- CSRF Token -->
+    <meta name="csrf-token" content="nirfaMrxD4tgJ58FWRRTHQeW5n0NjKVwu2fZusxY">
+
+    <title>Grades | BoxedBlock</title>
+
+    <!-- Favicon -->
+    <link rel="shortcut icon" href="https://boxedblock.fr/storage/img/000.png">
+
+    <!-- Scripts -->
+    <script src="https://boxedblock.fr/assets/vendor/jquery/jquery.min.js" defer></script>
+    <script src="https://boxedblock.fr/assets/vendor/bootstrap/js/bootstrap.bundle.min.js" defer></script>
+    <script src="https://boxedblock.fr/assets/vendor/axios/axios.min.js" defer></script>
+    <script src="https://boxedblock.fr/assets/js/script.js" defer></script>
+    <script src="https://boxedblock.fr/assets/themes/darkmoon/js/navigation.js" defer></script>
+    <script src="https://boxedblock.fr/assets/themes/darkmoon/js/clipboard.js" defer></script>
+    <script src="https://boxedblock.fr/assets/themes/darkmoon/js/SmoothScroll.js" defer></script>
+    
+    <!-- Page level scripts -->
+    <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="google-site-verification" content="FwHb5WXMsQ2c3mZ-jdV-qxLtTYWcatpvcaZhC_1CRvk" />
+<title>boxedblock.fr -</title>
+<meta name="robots" content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1" />
+<link rel="canonical" href="https://boxedblock.fr/" />
+<meta property="og:locale" content="fr_FR" />
+<meta property="og:type" content="website" />
+<meta property="og:title" content="BoxedBlock.fr" />
+<meta property="og:description" content="minecraft,serveur,bungee,spigot,paper,boxedblock,1.13.x,1.17.x,unique,nouveau,premier en france,n°1" />
+<meta property="og:url" content="https://boxedblock.fr/" />
+<meta property="og:site_name" content="boxedblock" />
+<meta property="og:image" content="https://boxedblock.fr/storage/img/rplogog.png;ssl=1" />
+<meta property="og:image:width" content="480" />
+<meta property="og:image:height" content="480" />
+<meta name="twitter:card" content="summary_large_image" />
+
+<!-- Fonts -->
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css?family=Rubik&display=swap" rel="stylesheet">
+    <link href="https://boxedblock.fr/assets/vendor/fontawesome/css/all.min.css" rel="stylesheet">
+
+    <!-- Styles -->
+    <link href="https://boxedblock.fr/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+        <link href="https://boxedblock.fr/assets/themes/darkmoon/css/style.css?v=1.0.2" rel="stylesheet">
+    
+            <style>
+                :root {
+            --theme-color: #38c8c1;
+            --theme-color-hover: #74d9d4;
+        }
+            </style>
+</head>
+
 <body>
-    <html>
-        <head>
-            <ul>
-                <li><a href= "index.html">Home </a></li>
-                <li><a href="actualités.html">Actualites</a></li>
-                <li><a href="contact.html">Contact</a></li>
-                <li><a href="boutique.html">Boutique</a></li>
-                <div>&nbsp;&#1500;MINECRAFT&#1500</div> 
-              </ul>
-            
-        </head>
-        <style>
-            ul {
-                list-style-type: none;
-                margin: 0;
-                padding: 0;
-                overflow: hidden;
-                background-color: #333;
-            }
-            
-            li {
-                float: left;
-            }
-            
-            li a {
-                display: block;
-                color: white;
-                text-align: center;
-                padding: 14px 16px;
-                text-decoration: none;
-            }
-            
-            /* Change the link color to #111 (black) on hover */
-            li a:hover {
-                background-color: #111;
-            }
-                        p{
-                            text-align : center;
-                            text-transform: capitalize;
-                            color :red;
-                            font-size: 25px;
-                        }
-                         div{
-                            text-indent : 67%;
-                            text-align : justify;
-                            text-transform: capitalize;
-                            color : white;
-                            font-size : 40px;
-                            
-                        }
-                        .active {
-                background-color: #4CAF50;
-            }
-                        button {
-                             
-               
-                display: inline-block;
-            background-color: #7b38d8;
-            border-radius: 10px;
-            border: 4px double #cccccc;
-            color: #eeeeee;
-            text-align: center;
-            font-size: 28px;
-            padding: 20px;
-            width: 200px;
-            -webkit-transition: all 0.5s;
-            -moz-transition: all 0.5s;
-            -o-transition: all 0.5s;
-            transition: all 0.5s;
-            cursor: pointer;
-            margin: 5px;
-            }
-                    </style>
-<body background="https://fr-minecraft.net/upload/wallpapers/images/fr-minecraft_wallpaper_GZ90.jpg"></body>
-    </html>
+<div id="app">
+    <header>
+        <div class="header-nav">
+    <div id="headerBackground" class="header-background" style="background-position: 0px;background: url('https://boxedblock.fr/storage/img/07.png') top / cover no-repeat"></div>
+
+    <div class="header-nav-top navigation">
+        <div class="container navigation-content">
+            <ul class="header-nav-top-left">
+                                                                                        <li class="item ">
+                                <a href="https://boxedblock.fr/boxedblock" >
+                                    Jeux
+                                </a>
+                            </li>
+                                                                                                                                    <li class="item ">
+                                <a href="https://boxedblock.fr/vote" >
+                                    Votes
+                                </a>
+                            </li>
+                                                                                                                                    <li class="item ">
+                                <a href="https://boxedblock.fr" >
+                                    Accueil
+                                </a>
+                            </li>
+                                                                                                                                                                                    </ul>
+            <ul class="header-nav-top-mid">
+                <li class="item">
+                                            <img src="https://boxedblock.fr/storage/img/002.png" alt="Logo">
+                                    </li>
+            </ul>
+            <ul class="header-nav-top-right">
+                                                                                                                                                                                                    <li class="item ">
+                                <a href="https://boxedblock.fr/wiki" >
+                                                                        Wiki
+                                </a>
+                            </li>
+                                                                                                                                    <li class="item  active ">
+                                <a href="https://boxedblock.fr/shop" >
+                                                                            <i class="fas fa-shopping-cart"></i>
+                                                                        Boutique
+                                </a>
+                            </li>
+                                                                                                                                    <li class="dropdown">
+                                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown28" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    Autres
+                                </a>
+                                <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown28">
+                                                                            <a class="dropdown-item " href="https://boxedblock.fr/regles" >Règlement</a>
+                                                                    </div>
+                            </li>
+                                                                        </ul>
+        </div>
+    </div>
+
+    <div class="header-content">
+        <div class="container" style="position: relative">
+            <div class="header-content-mid">
+                <div class="description">
+                                        <div class="copy-ip address_copy" data-text="MC.BOXEDBLOCK.FR" data-copied-text="l&#039;ip a été copiée" data-copy-text="copier l&#039;ip du serveur">
+                        <p class="ip">MC.BOXEDBLOCK.FR</p>
+                        <p class="info">copier l&#039;ip du serveur</p>
+                    </div>
+                    
+                                        <p class="about">Sur BoxedBlock, vous allez découvrir un gameplay que vous n&#039;avez jamais connu ! ce concept est unique, et nous sommes les premiers à vous le proposer. de la 1.13.x / 1.17.x et accessibles à tous.</p>
+                                    </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="header-nav-bottom sub-navigation container mb-4">
+        <ul class="header-nav-bottom-left">
+            <li class="item">
+                <div class="online">
+                                                                        <p><span>50</span> Joueurs connectés !</p>
+                                                            </div>
+            </li>
+        </ul>
+
+        <ul class="header-nav-bottom-mid">
+                                                                                <li class="item">
+                    <a href="https://discord.gg/FbBwaVfeq6" target="_blank">
+                        <i class="fab fa-discord"></i>
+                    </a>
+                </li>
+                                                                                        </ul>
+
+        <ul class="header-nav-bottom-right">
+                            <li class="item">
+                    <a href="https://boxedblock.fr/user/login">
+                        Connexion
+                    </a>
+                </li>
+                                    <li class="item">
+                        <a href="https://boxedblock.fr/user/register">
+                            Inscription
+                        </a>
+                    </li>
+                                    </ul>
+    </div>
+</div>
+
+<div class="header-mobile-nav">
+    <div class="mobile-btn" id="mobile-btn">
+        <span id="nav-btn-icon"><i class="fas fa-bars"></i></span>
+    </div>
+
+    <ul class="mobile-navigation" id="mobile-nav">
+        <li>
+                            <img src="https://boxedblock.fr/storage/img/002.png" alt="Logo">
+                    </li>
+
+                                    <li class="item ">
+                    <a href="https://boxedblock.fr/boxedblock" >
+                        <span class="name">Jeux</span>
+                    </a>
+                </li>
+                                                <li class="item ">
+                    <a href="https://boxedblock.fr/vote" >
+                        <span class="name">Votes</span>
+                    </a>
+                </li>
+                                                <li class="item ">
+                    <a href="https://boxedblock.fr" >
+                        <span class="name">Accueil</span>
+                    </a>
+                </li>
+                                                <li class="item ">
+                    <a href="https://boxedblock.fr/wiki" >
+                        <span class="name">Wiki</span>
+                    </a>
+                </li>
+                                                <li class="item  active ">
+                    <a href="https://boxedblock.fr/shop" >
+                        <span class="name">Boutique</span>
+                    </a>
+                </li>
+                                                <li class="item nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown28" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Autres
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown28">
+                                                    <a class="dropdown-item " href="https://boxedblock.fr/regles" >Règlement</a>
+                                            </div>
+                </li>
+                                        <li class="item">
+                <a href="https://boxedblock.fr/user/login">
+                    <span class="name">Connexion</span>
+                </a>
+            </li>
+
+                            <li class="item">
+                    <a href="https://boxedblock.fr/user/register">
+                        <span class="name">Inscription</span>
+                    </a>
+                </li>
+                        </ul>
+</div>
+    </header>
+
+    <main>
+        <div class="container">
+            <div id="status-message"></div>
+        </div>
+
+        <div id="go-to-bottom-div">
+                <div class="container content">
+        <div class="page-container">
+            <div class="page-container-content">
+                <h1 class="page-container-title">Boutique</h1>
+
+                                    <div class="shop-sidebar-2">
+            <a class="login" href="https://boxedblock.fr/shop/cart">Connexion</a>
+    
+    </div>
+                
+                <nav class="shop-navbar navbar navbar-expand-lg">
+                    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="toggler-icon"><i class="fas fa-bars"></i></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto justify-content-center">
+                                                                                            <li class="nav-item  nav-item-active ">
+                                    <a href="https://boxedblock.fr/shop/categories/2" class="nav-link">Grades</a>
+                                </li>
+                                                                                                                            <li class="nav-item ">
+                                    <a href="https://boxedblock.fr/shop/categories/4" class="nav-link">Clées</a>
+                                </li>
+                                                                                                                            <li class="nav-item ">
+                                    <a href="https://boxedblock.fr/shop/categories/5" class="nav-link">Boost</a>
+                                </li>
+                                                                                                                            <li class="nav-item ">
+                                    <a href="https://boxedblock.fr/shop/categories/8" class="nav-link">Packs</a>
+                                </li>
+                                                                                                                            <li class="nav-item ">
+                                    <a href="https://boxedblock.fr/shop/categories/9" class="nav-link">Boites Mystère</a>
+                                </li>
+                                                                                    </ul>
+                    </div>
+                </nav>
+
+                <div class="row">
+                    
+                    <div class=" col-lg-12 ">
+                        <div class="row products">
+                                                            <div class=" col-md-3  mb-4">
+                                    <div class="card h-100 product">
+                                                                                    <a href="#" data-package-url="https://boxedblock.fr/shop/packages/6">
+                                                <img class="card-img-top" src="https://boxedblock.fr/storage/packages/pij075z9u8lHbPhjiPBMAcKsQ9UYt7QxUrpRhlWI.png" alt="VIP 2 Mois">
+                                            </a>
+                                        
+                                        <div class="card-body">
+                                            <h4 class="card-title">VIP 2 Mois</h4>
+                                            <h5>
+                                                                                                10000 PointsBoutique
+                                            </h5>
+
+                                            <a href="#" class="buy btn btn-primary btn-block" data-package-url="https://boxedblock.fr/shop/packages/6">
+                                                Acheter
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class=" col-md-3  mb-4">
+                                    <div class="card h-100 product">
+                                                                                    <a href="#" data-package-url="https://boxedblock.fr/shop/packages/7">
+                                                <img class="card-img-top" src="https://boxedblock.fr/storage/packages/QQbRHmG1CcWuz8DMV2VvjRZIj5K8IYToPvGpziud.png" alt="VIP+ 2 Mois">
+                                            </a>
+                                        
+                                        <div class="card-body">
+                                            <h4 class="card-title">VIP+ 2 Mois</h4>
+                                            <h5>
+                                                                                                21500 PointsBoutique
+                                            </h5>
+
+                                            <a href="#" class="buy btn btn-primary btn-block" data-package-url="https://boxedblock.fr/shop/packages/7">
+                                                Acheter
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class=" col-md-3  mb-4">
+                                    <div class="card h-100 product">
+                                                                                    <a href="#" data-package-url="https://boxedblock.fr/shop/packages/8">
+                                                <img class="card-img-top" src="https://boxedblock.fr/storage/packages/BofeTy5UBaoLsRcQlAUgOepVw6iJeEOC1N6qnqnA.png" alt="MVP 1 Mois">
+                                            </a>
+                                        
+                                        <div class="card-body">
+                                            <h4 class="card-title">MVP 1 Mois</h4>
+                                            <h5>
+                                                                                                37500 PointsBoutique
+                                            </h5>
+
+                                            <a href="#" class="buy btn btn-primary btn-block" data-package-url="https://boxedblock.fr/shop/packages/8">
+                                                Acheter
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                                            <div class=" col-md-3  mb-4">
+                                    <div class="card h-100 product">
+                                                                                    <a href="#" data-package-url="https://boxedblock.fr/shop/packages/9">
+                                                <img class="card-img-top" src="https://boxedblock.fr/storage/packages/vg7Z8GjjOpkvgBpnGUc2WLtoIrGVyWwh5OisKKJp.png" alt="MVP+ 1 Mois">
+                                            </a>
+                                        
+                                        <div class="card-body">
+                                            <h4 class="card-title">MVP+ 1 Mois</h4>
+                                            <h5>
+                                                                                                50500 PointsBoutique
+                                            </h5>
+
+                                            <a href="#" class="buy btn btn-primary btn-block" data-package-url="https://boxedblock.fr/shop/packages/9">
+                                                Acheter
+                                            </a>
+                                        </div>
+                                    </div>
+                                </div>
+                                                    </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal fade" id="itemModal" tabindex="-1" role="dialog" aria-labelledby="itemModalLabel" aria-hidden="true"></div>
+        </div>
+    </main>
+</div>
+
+<div class="container">
+    <div class="join-us">
+        <i class="fas fa-globe-europe"></i>
+                                    <p>Rejoint les <span>50</span> Joueurs connectés !</p>
+                        </div>
+</div>
+
+<footer class="footer">
+    <div class="container">
+        <div class="top-footer">
+                            <img src="https://boxedblock.fr/storage/img/002.png" alt="Logo">
+                        <div class="top-footer-content">
+                <div class="copyright">
+                    <div class="mention">
+                        Copyright © 2021 BoxedBlock - IP:   mc.boxedblock.fr <br> Propulsé par <a href="https://azuriom.com" target="_blank" rel="noopener noreferrer">Azuriom</a>.                    </div>
+                    <div class="copyright-links">
+                                                    <a href="https://boxedblock.fr/CGU">CGU</a>
+                                                    <a href="https://boxedblock.fr/cgv">CGV</a>
+                                                    <a href="https://boxedblock.fr/CGU">Mentions légales</a>
+                                            </div>
+                </div>
+
+                <div class="socials">
+                    <div class="social-links">
+                                                                                                                                                                                            <a href="https://discord.gg/FbBwaVfeq6" target="_blank">
+                                    <i class="fab fa-discord"></i>
+                                </a>
+                                                                                                                                                                                                                                    </div>
+                </div>
+
+                <div class="links">
+                    <ul>
+                                                                                    <li><a href="https://boxedblock.fr">Accueil</a></li>
+                                                                                                                <li><a href="https://boxedblock.fr/vote">Voter</a></li>
+                                                                                                                <li><a href="https://boxedblock.fr/wiki">Wiki</a></li>
+                                                                                                                                                                                </ul>
+                    <ul>
+                                                                                                                                                                                                                                                <li><a href="https://discord.gg/FbBwaVfeq6">Discord</a></li>
+                                                                                                                <li><a href="https://boxedblock.fr/shop">Boutique</a></li>
+                                                                        </ul>
+                </div>
+            </div>
+        </div>
+        <a class="mention-dev" href="https://twitter.com/Captain34_dev" target="_blank">
+            Réalisé avec <i style="color: orangered;" class="fas fa-heart"></i> par Captain34 & Sloyni
+        </a>
+    </div>
+</footer>
+    <script>
+        document.querySelectorAll('[data-package-url]').forEach(function (el) {
+            el.addEventListener('click', function (ev) {
+                ev.preventDefault();
+
+                axios.get(el.dataset['packageUrl'], {
+                    headers: {
+                        'X-PJAX': 'true'
+                    }
+                }).then(function (response) {
+                    $('#itemModal').html(response.data).modal('show');
+                }).catch(function (error) {
+                    createAlert('danger', error, true);
+                });
+            });
+        });
+    </script>
+    <a href="https://boxedblock.fr">accueil</a>
+<a href='http://www.serveurs-minecraft.org' target='_blank'>serveurs Minecraft</a>
 </body>
+</html>
